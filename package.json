@@ -5,17 +5,19 @@
     "typescript": "^5.1.6"
   },
   "name": "@r4bbit/snake-terminator",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "changeset publish"
+    "release": "pnpm run build && changeset publish",
+    "build": "tsup src/index.ts --format cjs,esm --dts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "semantic-release": "^21.0.7"
+    "semantic-release": "^21.0.7",
+    "tsup": "^7.1.0"
   }
 }
