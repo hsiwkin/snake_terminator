@@ -4,7 +4,7 @@
     "typescript": "^5.1.6"
   },
   "name": "snake-terminator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,5 +12,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "semantic-release": "^21.0.7"
+  }
 }
